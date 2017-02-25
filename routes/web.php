@@ -14,8 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('taller/index',
           'SitioController@index');
 
-Route::get('taller/presentacion/{nombre}',
+Route::get('taller/presentar/{nombre}',
           'SitioController@presentar');
+
+Route::get('taller/formulario',
+          'SitioController@formulario');
